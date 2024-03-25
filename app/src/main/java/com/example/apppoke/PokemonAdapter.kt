@@ -28,7 +28,7 @@ class PokemonAdapter :
                 bindimg.twnompokemon.text = name
                 val arrayUrl = url.split("/")
                 Glide.with(itemView)
-                    .load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${arrayUrl[arrayUrl.siz}.png")
+                    .load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${arrayUrl[arrayUrl.size -2]}.png")
                     .into(bindimg.ivpokemon)
 
 
